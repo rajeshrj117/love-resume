@@ -1,0 +1,61 @@
+@import "tailwindcss";
+
+:root {
+  --theme-color: #4F46E5;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-family, 'Inter', sans-serif);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar { width: 4px; height: 4px; }
+::-webkit-scrollbar-track { background: #f1f1f1; border-radius: 10px; }
+::-webkit-scrollbar-thumb { background: #c7c7c7; border-radius: 10px; }
+::-webkit-scrollbar-thumb:hover { background: #a0a0a0; }
+
+/* Mobile bottom nav safe area */
+.safe-bottom { padding-bottom: env(safe-area-inset-bottom, 16px); }
+
+/* Smooth transitions */
+.tab-transition { transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1); }
+
+/* Touch targets - minimum 44px */
+.touch-target {
+  min-height: 44px;
+  min-width: 44px;
+}
+
+/* Mobile-specific overrides */
+@media (max-width: 768px) {
+  /* Prevent horizontal scroll */
+  html, body { overflow-x: hidden; }
+  
+  /* Better touch scrolling */
+  .scroll-area { -webkit-overflow-scrolling: touch; }
+  
+  /* Larger text inputs on mobile to prevent zoom */
+  input, textarea, select {
+    font-size: 16px !important;
+  }
+}
+
+/* Screen-reader only utility (SEO + a11y) */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}

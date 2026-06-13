@@ -1,0 +1,33 @@
+{
+  "name": "LoveResume - AI Resume Builder",
+  "short_name": "LoveResume",
+  "description": "Build stunning, ATS-optimized resumes in minutes with AI. Free resume builder with professional templates.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#4F46E5",
+  "orientation": "portrait-primary",
+  "categories": ["productivity", "utilities", "business"],
+  "icons": [
+    {
+      "src": "/logo.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/logo.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/og-image.png",
+      "sizes": "1200x630",
+      "type": "image/png",
+      "label": "LoveResume AI Resume Builder"
+    }
+  ]
+}
