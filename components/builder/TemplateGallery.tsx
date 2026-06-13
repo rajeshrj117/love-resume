@@ -108,6 +108,7 @@ const STUB_RESUME: import("@/types/builder").ParsedResume = {
     "12 merged PRs to the Next.js open-source project",
   ],
   keywords: ["Full-Stack", "React", "Node.js", "TypeScript", "AWS", "Team Lead"],
+  languages: ["English (Native)", "Spanish (Conversational)"],
 };
 
 export default function TemplateGallery({ templates }: { templates: Template[] }) {
