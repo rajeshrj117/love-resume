@@ -28,12 +28,12 @@ const BLANK_RESULT = {
   parsed: {
     personal_info: { full_name: "", headline: "", email: "", phone: "", location: "", linkedin: "", github: "", portfolio: "" },
     summary: "", skills: { technical: [], soft: [], tools: [], frameworks: [], cloud: [] },
-    experience: [], education: [], projects: [], certifications: [], achievements: [], keywords: [],
+    experience: [], education: [], projects: [], certifications: [], achievements: [], keywords: [], languages: [],
   },
   cleaned: {
     personal_info: { full_name: "", headline: "", email: "", phone: "", location: "", linkedin: "", github: "", portfolio: "" },
     summary: "", skills: { technical: [], soft: [], tools: [], frameworks: [], cloud: [] },
-    experience: [], education: [], projects: [], certifications: [], achievements: [], keywords: [],
+    experience: [], education: [], projects: [], certifications: [], achievements: [], keywords: [], languages: [],
   },
   ats_score: { total: 0, breakdown: {}, missing_keywords: [], strengths: [], improvements: ["Complete your resume to get an ATS score"] },
   builder: { sections: [], editable: true, draggable: true },
@@ -564,6 +564,7 @@ function BuilderInner() {
               "Contributed 12 merged PRs to the Next.js open-source project",
             ],
             keywords: ["Full-Stack", "React", "Node.js", "TypeScript", "AWS", "System Design", "Team Lead"],
+            languages: ["English (Native)", "Spanish (Conversational)"],
           };
 
           // Use user's real resume for thumbnails if available, otherwise use the rich stub
